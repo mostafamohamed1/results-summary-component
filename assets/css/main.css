@@ -65,7 +65,7 @@ body {
     max-width: calc(376px * 2);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0 0 30px hsl(242, 84%, 80%, 60%);
   }
@@ -92,14 +92,13 @@ body {
 .card__title {
   color: var(--clr-blue-200);
   font-weight: 500;
-  font-size: 1rem;
 }
 
 .card__progress {
-  margin-block: 2rem;
+  margin-block: 1.5rem;
   margin-inline: auto;
-  height: 130px;
-  width: 130px;
+  height: 200px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,9 +107,10 @@ body {
   border-radius: 50%;
 }
 
-.card__progress h1 {
+.card__progress span:first-child {
+  color: var(--clr-white);
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .card__progress span {
@@ -128,7 +128,7 @@ body {
 .card__result p {
   color: var(--clr-blue-200);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .card__summary .card__title {
@@ -136,13 +136,13 @@ body {
 }
 
 .card__stats {
-  margin-block: 1.2rem;
+  margin-block: 2rem;
   list-style: none;
 }
 
 .card__item {
   padding: 0.7rem 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,13 +159,11 @@ body {
 }
 
 .card__item div:first-child h4 {
-  font-size: 0.9rem;
   font-weight: 500;
   color: var(--clr-gray-800);
 }
 
 .card__item div:last-child p {
-  font-size: 0.8rem;
   color: var(--clr-blue-200);
 }
 
